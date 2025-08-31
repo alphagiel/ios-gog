@@ -138,7 +138,7 @@ class LoginViewController: UIViewController {
     }
 
     private func loginSuccessful() {
-        // For now, just show success - we'll add game screen navigation later
-        showAlert(title: "Success", message: "Login successful!")
+        let landingPageVC = LandingPageViewController()
+        navigationController?.pushViewController(landingPageVC, animated: true)
     }
 }
